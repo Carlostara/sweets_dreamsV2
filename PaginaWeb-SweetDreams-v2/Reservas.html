@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel sweet dreams</title>
+</head>
+<body style="background-color:whitesmoke">
+ 
+    <div >
+        <center><img style="background-color: aquamarine;"
+          src="Imagenes/Logo Hotel.png"
+          alt="Logo SweetDreams"
+          width="200" 
+        /></center>
+      </div>
+    <div>
+      <nav >
+        <a href="index.html">inicio</a>
+        <a href="Habitaciones.html">Habitaciones</a>
+        <a href="Restaurantes.html">Restaurante</a>
+        <a href="Eventos.html">Eventos</a> 
+        <a href="Reservas.html">Reservas</a>    
+      </nav>
+    
+    <div>
+      <h1 style="color: darkblue;text-align: center;">Haz tu Reservación</h1>
+
+    </div>
+    <div>
+      
+      <p><b>Es necesario que llene el siguiente Formulario, para poder identificar tus gustos y darte nuestra mejor atención</b></p>
+    </div>
+    <form style="background-color:indianred;border-radius: 2px;" action="reservacion.php" method="post">
+      <p>
+        Nombre: <input type="text" name="nombre" placeholder="Ingresa tu nombre" />
+         Apellido: <input type="text" name="apellido" placeholder="Ingresa tu apellido" />
+        Teléfono: <input type="text" name="telefono" placeholder="N° Telefono" /> 
+      </p>
+      <p>
+        Email: <input type="text" name="email" placeholder="Ingresa tu correo" />
+        Dia de llegada: <input type="text" name="fecha" placeholder="fecha de llegada" />Dia de Salida: <input type="text" name="Salida" placeholder="Fecha de Salida" />
+      </p>
+      <p>
+        Número de personas: <input type="text" name="personas" /> Tipo de habitación:
+        <select name="tipo">
+          <option value="Estandar">Estandar </option>
+          <option value="Triple Estandar">Triple Estandar</option>
+          <option value="Suite">Suite</option>
+        </select>
+        Comentarios: <textarea name="comentarios"></textarea>
+      </p>
+      <p>
+        <input type="submit" value="Reservar" />
+      </p>
+    </form>
+      
+    </body>
+ </html>
